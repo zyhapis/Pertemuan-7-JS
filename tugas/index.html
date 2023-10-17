@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data PPL</title>
+</head>
+<body>
+    <script>
+        const mahasantri1 = {
+    nama: "Hafidz",
+    asal: "Jakarta",
+    hobi: ["membaca", "menulis", "berenang"],
+  };
+  
+  const mahasantri2 = {
+    nama: "Annadvi",
+    asal: "Surabaya",
+    hobi: ["mendaki gunung", "bermain musik", "memasak"],
+  };
+  
+  const mahasantri3 = {
+    nama: "Baihaqi",
+    asal: "Bandung",
+    hobi: ["bermain bola", "traveling", "fotografi"],
+  };
+  
+  const mahasantri4 = {
+    nama: "Rio",
+    asal: "Medan",
+    hobi: ["mendengarkan musik", "bersepeda", "menulis puisi"],
+  };
+  
+  const mahasantri5 = {
+    nama: "Hilman",
+    asal: "Yogyakarta",
+    hobi: ["bermain game", "berenang", "menggambar"],
+  };
+  
+  const mahasantri6 = {
+    nama: "Ilman",
+    asal: "Semarang",
+    hobi: ["membaca buku", "bermain bulu tangkis", "menyanyi"],
+  };
+  
+  const mahasantri7 = {
+    nama: "Aldi",
+    asal: "Balikpapan",
+    hobi: ["bermain sepak bola", "berpetualang", "menggambar"],
+  };
+  
+  const mahasantri8 = {
+    nama: "Yazid",
+    asal: "Makassar",
+    hobi: ["bermain gitar", "bersepeda gunung", "menonton film"],
+  };
+  
+  const mahasantri9 = {
+    nama: "Irsyad",
+    asal: "Palembang",
+    hobi: ["berenang", "mengikuti kompetisi renang", "menggambar komik"],
+  };
+  
+  const mahasantri10 = {
+    nama: "Arya",
+    asal: "Lampung",
+    hobi: ["membaca novel", "bermain tenis", "menggambar manga"],
+  };
+  
+  const mahasantri11 = {
+    nama: "Erik",
+    asal: "Aceh",
+    hobi: ["bermain catur", "bermain basket", "menulis cerpen"],
+  };
+  
+  const mahasantri12 = {
+    nama: "Nanto",
+    asal: "Manado",
+    hobi: ["bermain piano", "bersepeda santai", "menggambar"],
+  };
+  
+  const mahasantri13 = {
+    nama: "Hasan",
+    asal: "Pekanbaru",
+    hobi: ["bermain bulu tangkis", "mengumpulkan koin", "menyanyi"],
+  };
+  
+  const dataMahasantri = [
+    mahasantri1,
+    mahasantri2,
+    mahasantri3,
+    mahasantri4,
+    mahasantri5,
+    mahasantri6,
+    mahasantri7,
+    mahasantri8,
+    mahasantri9,
+    mahasantri10,
+    mahasantri11,
+    mahasantri12,
+    mahasantri13,
+  ];
+  
+  // Menggunakan for...in untuk mengakses setiap mahasantri
+  for (let i = 0; i < dataMahasantri.length; i++) {
+    const mahasantri = dataMahasantri[i];
+    console.log("Mahasantri " + (i + 1) + ":");
+    for (const key in mahasantri) {
+      if (Array.isArray(mahasantri[key])) {
+        console.log(key + ": " + mahasantri[key].join(", "));
+      } else {
+        console.log(key + ": " + mahasantri[key]);
+      }
+    }
+    console.log("\n");
+  }
+  
+  // Menggunakan for...of untuk mengakses array
+  for (const mahasantri of dataMahasantri) {
+    console.log(mahasantri);
+  }  
+    </script>
+</body>
+</html>
